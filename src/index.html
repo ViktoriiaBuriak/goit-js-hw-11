@@ -4,20 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css" />
   </head>
   <body>
-    
-    <div class="search-container">
-      <input type="text" id="search" placeholder="Search images...">
-      <button class="search-btn" type="button">Search</button>
-    </div>
-    <span class="message"></span>
+    <form class="search-container">
+      <div class="input-wrap">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search images..."
+          required
+        />
+        <button class="search-btn" type="submit">Search</button>
+      </div>
+      <div class="loader"></div>
+    </form>
+
     <ul class="gallery"></ul>
 
     <script type="module" src="./main.js"></script>
