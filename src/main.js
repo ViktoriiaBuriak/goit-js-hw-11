@@ -75,16 +75,18 @@ document.addEventListener('DOMContentLoaded', function () {
             captionList.classList.add('caption-list');
 
             const likesItem = document.createElement('li');
-            likesItem.innerHTML = 'Likes: <br>' + hit.likes;
+            likesItem.innerHTML = '<strong>Likes:</strong> <br>' + hit.likes;
 
             const viewsItem = document.createElement('li');
-            viewsItem.innerHTML = 'Views: <br>' + hit.views;
+            viewsItem.innerHTML = '<strong>Views:</strong> <br>' + hit.views;
 
             const commentsItem = document.createElement('li');
-            commentsItem.innerHTML = 'Comments: <br>' + hit.comments;
+            commentsItem.innerHTML =
+              '<strong>Comments:</strong> <br>' + hit.comments;
 
             const downloadsItem = document.createElement('li');
-            downloadsItem.innerHTML = 'Downloads: <br>' + hit.downloads;
+            downloadsItem.innerHTML =
+              '<strong>Downloads:</strong> <br>' + hit.downloads;
 
             captionList.appendChild(likesItem);
             captionList.appendChild(viewsItem);
